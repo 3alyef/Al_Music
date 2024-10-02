@@ -1,0 +1,38 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",                          // Define o alvo da compilação como ESNext para aproveitar os recursos mais recentes do JavaScript
+    "module": "ESNext",                          // Define o sistema de módulos como ESNext
+    "jsx": "react-native",                       // Configura JSX para React Native
+    "strict": true,                              // Ativa verificações rigorosas de tipo
+    "noEmit": true,                              // Evita a emissão de arquivos compilados (útil para TypeScript ser apenas uma ferramenta de verificação de tipos)
+    "isolatedModules": true,                     // Permite a compilação por arquivo individual (necessário para React Native)
+    "esModuleInterop": true,                     // Habilita a interoperabilidade entre módulos ES e CommonJS
+    "skipLibCheck": true,                        // Ignora a verificação de tipos em arquivos de definição de bibliotecas (.d.ts)
+    "forceConsistentCasingInFileNames": true,    // Garante o uso consistente de maiúsculas e minúsculas nos nomes de arquivos
+    "moduleResolution": "node",                  // Resolve os módulos como o Node.js faz
+    "resolveJsonModule": true,                   // Permite a importação de arquivos JSON
+    "allowSyntheticDefaultImports": true,        // Permite a importação padrão de módulos sem padrão
+    "lib": ["ESNext"],                           // Define as bibliotecas incluídas no ambiente (como `ESNext`)
+    "types": [
+			"jest",
+			// "@types/styled-components-react-native",
+		],                           // Inclui os tipos do Jest para suporte a testes
+    "baseUrl": ".",                              // Define o diretório raiz para resolver módulos
+    "paths": {                                   // Mapeamento de caminhos para atalhos de importação
+      "@components/*": ["src/components/*"],
+      "@assets/*": ["assets/*"],
+      "@screens/*": ["src/screens/*"],
+      "@utils/*": ["src/utils/*"]
+    }
+  },
+  "exclude": [
+    "node_modules",    // Exclui a pasta node_modules da verificação de tipos
+    "babel.config.js", // Exclui o arquivo de configuração do Babel
+    "metro.config.js", // Exclui o arquivo de configuração do Metro bundler
+    "jest.config.js"   // Exclui o arquivo de configuração do Jest
+  ],
+  "include": [
+    "src/**/*",        // Inclui todos os arquivos dentro da pasta `src` para verificação de tipos
+    "index.js"         // Inclui o arquivo principal `index.js`
+, "assets"  ]
+}
