@@ -2,8 +2,8 @@
  * @format
  */
 
-const { AppRegistry } = require("react-native");
-const App = require("./src/App").default; // Adicione .default se App for uma exportação padrão
-const { name: appName } = require("./app.json");
+import { AppRegistry } from "react-native";
+import App from "./src/App"; // ou o caminho correto para o seu componente App
+import { name as appName } from "./app.json";
 
 AppRegistry.registerComponent(appName, () => App);

@@ -21,10 +21,13 @@ module.exports = {
   },
   plugins: ["react", "react-native", "@typescript-eslint", "prettier"],
   rules: {
-		'prettier/prettier': ['error', {}, { usePrettierrc: true }], // Aplica as regras do prettier
+    "prettier/prettier": ["error", {}, { usePrettierrc: true }], // Aplica as regras do prettier
     "prettier/prettier": "error", // Exibe erros do Prettier no ESLint
     "@typescript-eslint/explicit-module-boundary-types": "off", // Exemplo de ajuste para TypeScript
     "react/react-in-jsx-scope": "off", // Desnecessário no React 17+
+    "react-native/no-inline-styles": "off",
+    "react-native/no-color-literals": "off", // Permitir literais de cor
+    "react-native/sort-styles": "error", // Forçar a classificação de propriedades de estilo
   },
   settings: {
     react: {
