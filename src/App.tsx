@@ -1,8 +1,8 @@
-import React from "react";
-import { AppNavigator } from "./navigation/AppNavigator";
-import { Keyboard, Pressable, SafeAreaView, StatusBar } from "react-native";
+import React from 'react';
+import { AppNavigator } from './navigation/AppNavigator';
+import { Keyboard, Pressable, SafeAreaView, StatusBar } from 'react-native';
 
-import { globalStyles } from "./styles/globalStyles";
+import { globalStyles } from './styles/globalStyles';
 
 export default function App(): React.JSX.Element {
   return (

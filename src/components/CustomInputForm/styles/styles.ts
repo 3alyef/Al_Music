@@ -1,17 +1,17 @@
-import { StyleSheet } from "react-native";
-import { globalStyles } from "../../../styles/globalStyles";
+import { StyleSheet } from 'react-native';
+import { globalStyles } from '../../../styles/globalStyles';
 
 export const styles = StyleSheet.create({
   InputText: {
-    color: "black",
+    color: 'black',
   },
   innerContainer: {
     height: 50,
-    justifyContent: "center",
+    justifyContent: 'center',
     padding: 3,
   },
   innerContainerInput: {
-    borderColor: "#aaa",
+    borderColor: '#aaa',
     borderRadius: 3,
     paddingLeft: 10,
     paddingRight: 10,
@@ -23,8 +23,8 @@ export const styles = StyleSheet.create({
     padding: 4,
   },
   labelContainer: {
-    justifyContent: "flex-start",
-    position: "absolute",
+    justifyContent: 'flex-start',
+    position: 'absolute',
     zIndex: 1,
   },
 });

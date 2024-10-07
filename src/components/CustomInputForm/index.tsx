@@ -7,17 +7,17 @@ import {
   TextStyle,
   View,
   ViewStyle,
-} from "react-native";
-import React, { useRef, useState } from "react";
-import { styles } from "./styles/styles";
-import { isRTL } from "../../constants/window.constants";
-import InputHandlers from "./utils/InputHandlers";
+} from 'react-native';
+import React, { useRef, useState } from 'react';
+import { styles } from './styles/styles';
+import { isRTL } from '../../constants/window.constants';
+import InputHandlers from './utils/InputHandlers';
 
 interface PropsCustomInputForm {
   onChangeText?: (text: string) => void;
   placeHolder?: string;
   labelColor?: string;
-  autoComplete?: TextInputProps["autoComplete"];
+  autoComplete?: TextInputProps['autoComplete'];
   containerStyle?: StyleProp<ViewStyle>;
 }
 export default function CustomInputForm({
@@ -27,7 +27,7 @@ export default function CustomInputForm({
   containerStyle,
   onChangeText,
 }: PropsCustomInputForm) {
-  const [text, setText] = useState("");
+  const [text, setText] = useState('');
   const [isFocused, setFocused] = useState(false);
   const labelPosition = useRef(new Animated.Value(text ? 1 : 0)).current;
   const labelStyle: Animated.AnimatedProps<TextStyle> = {
@@ -43,7 +43,7 @@ export default function CustomInputForm({
     }),
     color: labelPosition.interpolate({
       inputRange: [0, 1],
-      outputRange: ["gray", "#888"],
+      outputRange: ['gray', '#888'],
     }),
   };
 
@@ -71,7 +71,7 @@ export default function CustomInputForm({
           style={[
             styles.labelContainer,
             {
-              color: labelColor || "gray",
+              color: labelColor || 'gray',
               left: isRTL ? 0 : 10,
               right: isRTL ? 10 : 0,
             },

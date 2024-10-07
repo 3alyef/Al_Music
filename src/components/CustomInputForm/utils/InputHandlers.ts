@@ -1,5 +1,5 @@
-import { Dispatch, SetStateAction } from "react";
-import { Animated } from "react-native";
+import { Dispatch, SetStateAction } from 'react';
+import { Animated } from 'react-native';
 
 interface PropsInputHandlers {
   setFocused: React.Dispatch<React.SetStateAction<boolean>>;

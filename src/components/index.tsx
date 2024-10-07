@@ -1,3 +1,3 @@
-import CustomInputForm from "./CustomInputForm";
+import CustomInputForm from './CustomInputForm';
 
 export { CustomInputForm };

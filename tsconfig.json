@@ -19,10 +19,17 @@
 		],                           // Inclui os tipos do Jest para suporte a testes
     "baseUrl": ".",                              // Define o diretório raiz para resolver módulos
     "paths": {                                   // Mapeamento de caminhos para atalhos de importação
-      "@components/*": ["src/components/*"],
       "@assets/*": ["assets/*"],
-      "@screens/*": ["src/screens/*"],
-      "@utils/*": ["src/utils/*"]
+			"@components/*": ["components/*"],
+			"@hooks/*": ["hooks/*"],
+			"@i18n/*": ["i18n/*"],
+			"@navigation/*": ["navigation/*"],
+			"@screens/*": ["screens/*"],
+			"@services/*": ["services/*"],
+			"@store/*": ["store/*"],
+			"@styles/*": ["styles/*"],
+			"@types/*": ["types/*"],
+			"@utils/*": ["utils/*"],
     }
   },
   "exclude": [

@@ -1,1 +1,1 @@
-export const preset = "react-native";
+export const preset = 'react-native';
